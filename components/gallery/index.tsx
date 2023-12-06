@@ -18,7 +18,7 @@ const Gallery: React.FC<GalleryProps> = ({ image }) => {
       <Tab.Panels className="w-full aspect-square">
         {image.map((item)=><Tab.Panel key={item.id}>
         <div className="aspect-square w-full h-full relative sm:rounded-lg overflow-hidden">
-          <Image fill src={item.url} alt="image" className="object-cover object-center"/>
+          <Image fill src={item.url} alt="image" sizes="100vw" className="object-cover object-center"/>
         </div>
         </Tab.Panel>)}
       </Tab.Panels>
