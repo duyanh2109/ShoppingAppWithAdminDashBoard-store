@@ -1,3 +1,4 @@
+
 import getCategory from "@/actions/get-category";
 import getColors from "@/actions/get-colors";
 import getProducts from "@/actions/get-products";
@@ -5,6 +6,7 @@ import getSizes from "@/actions/get-sizes";
 import Billboard from "@/components/Billboard";
 import Container from "@/components/UI/Container";
 import Filter from "@/components/UI/Filter";
+import MobileFilter from "@/components/UI/MobileFilter";
 import NoResult from "@/components/UI/no-result";
 import ProductCard from "@/components/UI/product-card";
 import React from "react";

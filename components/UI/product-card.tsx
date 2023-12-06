@@ -20,6 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
         <Image
           alt="Image"
           src={data?.image?.[0]?.url}
+          sizes="20vw"
           fill
           className="aspect-squared object-cover rounded-md"
         />
