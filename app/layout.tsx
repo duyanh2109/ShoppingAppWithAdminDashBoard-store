@@ -1,6 +1,6 @@
 import { Urbanist } from "next/font/google";
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import ModalProvider from "@/providers/modal-provider";
@@ -24,6 +24,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
