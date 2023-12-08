@@ -3,6 +3,7 @@ import Container from "@/components/UI/Container";
 import useCart from "@/hooks/use-cart";
 import React, { useEffect, useState } from "react";
 import CartItem from "./components/cart-item";
+import Summary from "./components/Summary";
 
 const CartPage = () => {
   const [isMounted, setMounted] = useState(false);
@@ -25,6 +26,7 @@ const CartPage = () => {
                         {cart.items.map((item)=><CartItem key={item.id} data={item}/>)}
                     </ul>
                 </div>
+                <Summary/>
             </div>
         </div>
       </Container>
