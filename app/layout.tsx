@@ -5,6 +5,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const font = Urbanist({ subsets: ["latin"] });
 export const metadata = {
   title: "Store",
@@ -25,6 +26,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
